@@ -19,8 +19,13 @@ class Dinosaur:
         first_random_item = list_of_random_items_[0]
         second_random_item = list_of_random_items_[1]
         if input % 2 == 0:
+            self.attack_power = first_random_item
+        elif input % 2 != 0:
+            self.attack_power = second_random_item
+        else:
+            print("That is not a number!")
 
-            pass
+
 
 
 
