@@ -8,6 +8,9 @@ class Dinosaur:
         self.energy = 100
         self.attack_power = attack_power
 
+    def dinosaur_type(self):
+        self.type = input("How shall we call your your dinosaur?")
+        print(f"You must prevent the extinction of your heard {self.type}")
 
 
     def attack_power(self, number):
@@ -25,7 +28,7 @@ class Dinosaur:
         else:
             print("That is not a number!")
 
-
+        #Need to review conditional statement  for random generation of power level.
 
 
 

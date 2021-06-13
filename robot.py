@@ -2,17 +2,21 @@ from weapon import Weapon
 
 
 class Robot:
-    def __init__(self, type, attack_power):
-        self.type = type
+    def __init__(self, name, attack_power):
+        self.name = name
         self.health = 100
         self.energy = 100
-        self.attack_power = attack_power
+        self.weapon = ''
 
     def attack(self, dinosaur):
         #solar loom blast strikes dinosaur reducing health level
         pass
 
-    def name(self, name_robot):
-        # robot 1, robot 2 etc.
+    def robot_name(self):
+        self.name = input("How shall we call your robot?")
+        print(f" Prepare for battle {self.name}")
 
-        pass
+    def weapon_selected(self):
+        self.weapon = Weapon
+        self.weapon.selected_weapon()
+        self.weapon.attack_power()
