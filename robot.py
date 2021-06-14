@@ -8,7 +8,7 @@ class Robot:
         self.energy = 100
         self.weapon = ''
 
-    def attack(self, dinosaur):
+    def attack_dinosaur(self, dinosaur):
         #solar loom blast strikes dinosaur reducing health level
         pass
 

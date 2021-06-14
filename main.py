@@ -1,4 +1,10 @@
-from dinosaur import Dinosaur
+from battlefield import Battlefield
+
+battle_begins = Battlefield()
+pass
+
+
+
 
 
 
