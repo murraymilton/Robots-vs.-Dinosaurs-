@@ -1,21 +1,29 @@
-from random import random
-
-
 class Dinosaur:
-    def __init__(self, type):
+    def __init__(self, type, attack_power):
         self.type = type
         self.health = 100
         self.energy = 100
-        self.attack_power = 100
+        self.attack_power = attack_power
 
-    def attack_power(self, robot_damage):
-        robot_damage.health -= self.attack_power
-        robot_damage.health -= self.attack_power
-        robot_damage.health -= self.attack_power
+    def dino_attack(self, robot):
+            robot.health -= self.dinosaur.attack_power
+            self.energy -= 20
 
-    def dinosaur_type(self):
-        self.type = input("How shall we call your your dinosaur?")
-        print(f"You must prevent the extinction of your heard {self.type}")
+    # def attack_power(self, robot_damage):
+    #     robot_damage.health -= self.attack_power
+    #     robot_damage.health -= self.attack_power
+    #     robot_damage.health -= self.attack_power
+
+    # def __init__(self, name, weapon, attack_power):
+    #     self.name = name
+    #     self.health = 100
+    #     self.power_level = 100
+    #     self.robot_weapon = weapon
+    #     self.attack_power = attack_power
+    #
+    # def robot_attack(self, dinosaur):
+    #     dinosaur.health -= self.robot_weapon.attack_power
+    #     self.power_level -= 20
 
 
 

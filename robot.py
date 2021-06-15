@@ -2,34 +2,18 @@ from weapon import Weapon
 
 
 class Robot:
-    def __init__(self, attack_power):
-        self.create_name = []
+    def __init__(self, name, weapon, attack_power):
+        self.name = name
         self.health = 100
         self.power_level = 100
-        self.assign_robot()
-        self.weapons = []
+        self.robot_weapon = weapon
         self.attack_power = attack_power
 
-    def attack_power(self, dinosaur_injury):
-        dinosaur_injury.health -= self.weapons[0].attack_power
-        dinosaur_injury.health -= self.weapons[1].attack_power
-        dinosaur_injury.health -= self.weapons[2].attck_power
+    def robot_attack(self, dinosaur):
+        dinosaur.health -= self.robot_weapon.attack_power
+        self.power_level -= 20
 
-        return dinosaur_injury
-        pass
 
-    def create_name(self):
-        self.create_name = input("How shall we call your Robot?")
-        robot_one = self.create_name
-        print(f"Your robot is {robot_one} ")
-
-    def assign_robot(self):
-        manner = Weapon("Rifle", 100)
-        winter = Weapon("Solar Blast", 100)
-        star = Weapon("Sonar Flood", 100)
-        self.weapons.append(manner)
-        self.weapons.append(winter)
-        self.weapons.append(star)
 
 
 

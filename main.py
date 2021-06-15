@@ -1,6 +1,7 @@
 from battlefield import Battlefield
-pass
 
+battlefield = Battlefield()
+battlefield.game_start()
 
 
 
