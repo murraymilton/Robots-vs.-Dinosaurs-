@@ -6,7 +6,6 @@ class Heard:
         self.dinosaurs = []
         self.dinosaur_heard()
 
-
     def dinosaur_heard(self):
         dinosaur_one = Dinosaur("Rexisorius", 100)
         dinosaur_two = Dinosaur("Theropods", 100)
